@@ -13,6 +13,7 @@
          android:id="@+id/appbar">
 
         <com.google.android.material.appbar.MaterialToolbar
+            android:background="@color/md_theme_dark_primary"
              android:layout_height="?attr/actionBarSize"
              android:layout_width="match_parent"
              android:id="@+id/toolbar" />
@@ -41,12 +42,13 @@
 
     </ScrollView>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+         android:text="Email"
          android:layout_height="wrap_content"
          android:layout_width="wrap_content"
          android:layout_margin="16dp"
-         app:srcCompat="@android:drawable/ic_dialog_email"
-         android:id="@+id/fab"
+         app:icon="@android:drawable/ic_dialog_email"
+         android:id="@+id/efab"
          android:layout_gravity="bottom|end" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
