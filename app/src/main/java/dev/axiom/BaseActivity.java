@@ -16,14 +16,14 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        DynamicColors.applyToActivitiesIfAvailable(this.getApplication());
-        ViewPump.init(ViewPump.builder()
-                .addInterceptor(new CalligraphyInterceptor(
-                        new CalligraphyConfig.Builder()
-                                .setDefaultFontPath("fonts/product.ttf")
-                                .setFontAttrId(io.github.inflationx.calligraphy3.R.attr.fontPath)
-                                .build()))
-                .build());
+//        DynamicColors.applyToActivitiesIfAvailable(this.getApplication());
+//        ViewPump.init(ViewPump.builder()
+//                .addInterceptor(new CalligraphyInterceptor(
+//                        new CalligraphyConfig.Builder()
+//                                .setDefaultFontPath("fonts/product.ttf")
+//                                .setFontAttrId(io.github.inflationx.calligraphy3.R.attr.fontPath)
+//                                .build()))
+//                .build());
         onCreateDoes();
     }
     @Override
